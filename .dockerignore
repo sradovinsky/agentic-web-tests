@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# Playwright output
+playwright-report/
+test-results/
+blob-report/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Playwright authentication
+playwright/.auth/
+
+# Logs
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
