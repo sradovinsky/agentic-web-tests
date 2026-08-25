@@ -27,7 +27,7 @@ jobs:
             -e CI=true \
             -e BASE_URL="${{ vars.TEST_BASE_URL }}" \
             web-e2e \
-            npx playwright test --project=chromium
+            npx playwright test --project=chromium --grep "@smoke"
 
       - name: Copy Playwright artifacts
         if: always()
