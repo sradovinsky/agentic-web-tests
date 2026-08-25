@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Codemify Homepage', () => {
-  test('Homepage content and CTA destination integrity without navigation', async ({ page }) => {
+  test('Homepage content and CTA destination integrity without navigation @smoke', async ({ page }) => {
     await page.goto('https://codemify.com/');
     // CI gate verification
     // 1. Open the seeded page and verify the page URL is exactly https://codemify.com/ and the title identifies Codemify career training.
