@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('Codemify Homepage', () => {
   test('Homepage content and CTA destination integrity without navigation', async ({ page }) => {
     await page.goto('https://codemify.com/');
-
+    // CI gate verification
     // 1. Open the seeded page and verify the page URL is exactly https://codemify.com/ and the title identifies Codemify career training.
     await expect(page).toHaveURL('https://codemify.com/');
     await expect(page).toHaveTitle(/Codemify.*Career Training.*QA.*AI Testing.*ML/);
